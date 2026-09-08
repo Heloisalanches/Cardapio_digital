@@ -8,8 +8,8 @@
 const NEGOCIO = {
   nome: "Heloisa Café",
   slogan: "Sabor que acolhe, carinho que fica!",
-  whatsapp: "5561999999999",       // troque pelo número real, DDI+DDD+número, só números
-  chavePix: "chave-pix-aqui",      // troque pela chave Pix real
+  whatsapp: "5561999162923",       // troque pelo número real, DDI+DDD+número, só números
+  chavePix: "004.602.091-83",      // troque pela chave Pix real
 };
 
 // Credenciais do Firebase (pegue em: Console Firebase > Configurações
