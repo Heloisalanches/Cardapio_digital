@@ -8,7 +8,7 @@
 const NEGOCIO = {
   nome: "Heloisa Café",
   slogan: "Sabor que acolhe, carinho que fica!",
-  whatsapp: "5561991629-23",       // troque pelo número real, DDI+DDD+número, só números
+  whatsapp: "5561999162993",       // troque pelo número real, DDI+DDD+número, só números
   chavePix: "004.602.091-83",      // troque pela chave Pix real
 };
 
