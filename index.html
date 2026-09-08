@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardápio Digital</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1 id="nomeNegocio">Carregando...</h1>
+    <div class="subtitulo" id="slogan"></div>
+  </nav>
+
+  <main>
+    <div id="listaProdutos">
+      <div class="vazio">Carregando cardápio...</div>
+    </div>
+  </main>
+
+  <footer>
+    <div>Fale com a gente</div>
+    <div class="contato">
+      <a id="linkWhatsapp" class="botao botao-whatsapp" href="#" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <button id="botaoPix" class="botao botao-pix" type="button">Copiar chave Pix</button>
+    </div>
+    <p class="chave" id="chavePixTexto"></p>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+  <script src="config.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>

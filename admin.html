@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administração do Cardápio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1>Painel Administrativo</h1>
+    <div class="subtitulo" id="nomeNegocioAdmin"></div>
+  </nav>
+
+  <!-- Tela de login -->
+  <div class="admin-wrap" id="telaLogin">
+    <div class="login-box">
+      <input type="email" id="campoEmail" placeholder="E-mail" autocomplete="username" />
+      <input type="password" id="campoSenha" placeholder="Senha" autocomplete="current-password" />
+      <button class="btn-primario" id="botaoEntrar" type="button">Entrar</button>
+      <div class="erro" id="mensagemErro"></div>
+    </div>
+  </div>
+
+  <!-- Painel (só aparece após login) -->
+  <div class="admin-wrap" id="telaPainel" style="display:none;">
+    <div class="topo-admin">
+      <h2>Produtos</h2>
+      <button class="btn-secundario" id="botaoSair" type="button">Sair</button>
+    </div>
+
+    <div class="importar-box">
+      <p>Importar os 7 produtos do cardápio do Heloisa Café de uma vez (Café, Chocolate Quente, Cuscuz, Salgados, Caldo, Suco Natural, Refrigerante).</p>
+      <button class="btn-secundario" id="botaoImportar" type="button">Importar cardápio inicial</button>
+    </div>
+
+    <form class="form-produto" id="formProduto">
+      <input type="text" id="campoNome" placeholder="Nome do produto" required />
+      <input type="text" id="campoPreco" placeholder="Preço (ex: 12.50)" required inputmode="decimal" />
+      <input type="text" id="campoCategoria" placeholder="Categoria (ex: Lanches, Bebidas)" required />
+      <input type="url" id="campoImagem" placeholder="URL da imagem (opcional)" />
+      <button class="btn-primario" type="submit">Adicionar produto</button>
+    </form>
+
+    <div id="listaAdmin">
+      <div class="vazio">Carregando produtos...</div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
+  <script src="config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
