@@ -43,7 +43,11 @@
       <input type="text" id="campoNome" placeholder="Nome do produto" required />
       <input type="text" id="campoPreco" placeholder="Preço (ex: 12.50)" required inputmode="decimal" />
       <input type="text" id="campoCategoria" placeholder="Categoria (ex: Lanches, Bebidas)" required />
-      <input type="url" id="campoImagem" placeholder="URL da imagem (opcional)" />
+      <div class="campo-imagem">
+        <label for="campoImagemArquivo" class="rotulo-imagem">Foto do produto (opcional)</label>
+        <input type="file" id="campoImagemArquivo" accept="image/*" />
+        <img id="previewImagem" class="preview-imagem" style="display:none;" alt="Pré-visualização" />
+      </div>
       <button class="btn-primario" type="submit">Adicionar produto</button>
     </form>
 
