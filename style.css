@@ -288,9 +288,47 @@ button {
   margin-bottom: 20px;
 }
 
-.form-produto input:nth-child(3),
-.form-produto input:nth-child(4) { grid-column: 1 / -1; }
+.form-produto input:nth-child(3) { grid-column: 1 / -1; }
+.form-produto .campo-imagem { grid-column: 1 / -1; }
 .form-produto button { grid-column: 1 / -1; }
+
+.campo-imagem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.rotulo-imagem {
+  font-size: 13px;
+  color: var(--texto);
+  width: 100%;
+}
+
+.campo-imagem input[type="file"] {
+  flex: 1;
+  min-width: 160px;
+  padding: 8px;
+  font-size: 13px;
+}
+
+.preview-imagem {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--dourado);
+  flex-shrink: 0;
+}
+
+.preview-imagem-edicao {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--dourado);
+  flex-shrink: 0;
+}
 
 .importar-box {
   background: var(--creme-escuro);
@@ -355,6 +393,7 @@ button {
 .form-edicao input { font-size: 14px; padding: 8px 10px; }
 .form-edicao input:nth-child(3),
 .form-edicao input:nth-child(4) { grid-column: 1 / -1; }
+.form-edicao .campo-imagem { grid-column: 1 / -1; }
 .form-edicao .acoes-edicao { grid-column: 1 / -1; display: flex; gap: 8px; }
 
 .badge {
